@@ -37,4 +37,4 @@ List acceptance criteria here...
 
 [The site development is based on the following wireframe](#) :
 
-![The following image shows the web application's expected appearance and functionality](./assets/guide/Assets/02-advanced-css-homework-demo.gif)
+![The following image shows the web application's expected appearance and functionality](./assets/_guide/Assets/02-advanced-css-homework-demo.gif)
