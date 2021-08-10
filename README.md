@@ -15,22 +15,37 @@ A new professional portfolio showcasing my design and development work.
 
 ## Design Notes
 
-* List of
+* List design details here...
 
-## Development Notes
+## Development Notes | Tech Stack
 
-* List of
+* At the moment, this portfolio is composed of HTML & CSS only
+* In the future, I could see a use case for, at the very least, incorporating jQuery, FontAwesome, and React (as I learn it)
 
 ## User Story
 
 ```
-List user story here...
+AS AN employer
+I WANT to view a potential employee's deployed portfolio of work samples
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
 
 ## Acceptance Criteria
 
 ```
-List acceptance criteria here...
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ## Mock-Up
