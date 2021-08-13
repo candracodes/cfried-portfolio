@@ -21,7 +21,7 @@ TABLE OF CONTENTS:
     --standard-navy: #020312;
     --standard-pink: #d94796;
     --standard-light-gray: #e9ebf1;
-    --standard-medium-gray: #7F7F7F;
+    --standard-medium-gray: #5e6169;
   }
 body {
     font-family: Arial;
@@ -145,6 +145,31 @@ nav a:hover {
     width: 250px;
     height: 250px;
 }
+.section-about-me {
+    background-color: var(--standard-light-gray);
+    color: var(--standard-navy);
+    padding:20px;
+}
+.section-about-me h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.span-about-me-left {
+    width:20%;
+    margin-left:20px;
+}
+.span-about-me-right {
+    width: 80%;
+    float: right;
+    padding-right: 50px;
+    padding-top: 65px;
+    padding-left: 13px;
+}
+.span-about-me-right p {
+    color: var(--standard-medium-gray);
+    font-weight: lighter;
+}
 
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -192,6 +217,25 @@ nav a:hover {
         text-align: center;
         padding: 20px;
     }
+    /* SECTION 3: ABOUT ME */
+    .section-about-me h3 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    .span-about-me-left {
+        width: 100%;
+        margin-left: 0;
+        margin: 20px;
+    }
+    .span-about-me-right {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        padding-top: 0;
+        padding-left: 0;
+    }
 }
 
 /* MOBILE -- MEDIUM */
@@ -225,6 +269,25 @@ nav a:hover {
         flex: 100%;
         text-align: center;
         padding: 20px;
+    }
+    /* SECTION 3: ABOUT ME */
+    .section-about-me h3 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    .span-about-me-left {
+        width: 100%;
+        margin-left: 0;
+        margin: 40px;
+    }
+    .span-about-me-right {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        padding-top: 0;
+        padding-left: 0;
     }
 }
 
@@ -260,6 +323,25 @@ nav a:hover {
         text-align: center;
         padding: 20px;
     }
+    /* SECTION 3: ABOUT ME */
+    .section-about-me h3 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    .span-about-me-left {
+        width: 100%;
+        margin-left: 0;
+        margin: 65px;
+    }
+    .span-about-me-right {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        padding-top: 0;
+        padding-left: 0;
+    }
 }
 
 /* TABLET -- VERTICAL */
@@ -285,7 +367,54 @@ nav a:hover {
         padding-left: 20px;
         padding-right: 20px;
     }
+    /* SECTION 3: ABOUT ME */
+    .section-about-me h3 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    .span-about-me-left {
+        width: 100%;
+        margin-left: 0;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+    }
+    .span-about-me-right {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        padding-top: 20px;
+        padding-left: 0;
+    }
 }
+
+/* LAPTOP -- 1024PX */
+@media (max-width: 1024px) {
+    /* SECTION 3: ABOUT ME */
+    .section-about-me h3 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    .span-about-me-left {
+        width: 100%;
+        margin-left: 0;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+    }
+    .span-about-me-right {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+}
+
 
 /* GENERIC SMALL DEVICE */
 @media (max-width: 800px) {
