@@ -1,0 +1,298 @@
+/* 
+==================================
+TABLE OF CONTENTS:
+==================================
+1. GLOBAL SEMANTIC STYLES
+2. HEADER & TOP NAV 
+3. SECTION 1: INTRO
+4. SECTION 2: MIDDLE NAV 
+5. SECTION 3: ABOUT ME 
+6. SECTION 4: MY WORK 
+7. SECTION 5: FOOTER & CONTACT ME 
+8. RESPONSIVE MEDIA STYLES  
+==================================
+*/
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+1. GLOBAL SEMANTIC STYLES
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+:root {
+    --standard-white: #fff;
+    --standard-navy: #020312;
+    --standard-pink: #d94796;
+    --standard-light-gray: #e9ebf1;
+    --standard-medium-gray: #7F7F7F;
+  }
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: var(--standard-navy);
+    color: var(--standard-white);
+}
+h1 {
+    font-size: xxx-large;
+    font-weight: bold;
+}
+h2 {
+    font-size: xx-large;
+    font-weight:lighter;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2. HEADER & TOP NAV 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+nav {
+    background-color: var(--standard-white);
+    color: var(--standard-navy);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 55px;
+}
+nav a {
+    color: var(--standard-navy);
+    border-top: 4px solid var(--standard-white);
+    flex: 0 0 130px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+nav a:hover {
+    border-top: 4px solid var(--standard-pink);
+    background-color: var(--standard-light-gray);
+    font-weight: bold;
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+    color: #fff;
+    background-color: #d94796;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    font-size: xxx-large;
+    position: absolute;
+    top: 5px;
+    left: 5%;
+}
+.logo a {
+    color:#fff;
+    text-decoration: none;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+3. SECTION 1: INTRO
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.intro-section {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.intro-section article:first-child {
+    flex:40%;
+    text-align: left;
+    padding: 70px 10px 10px 90px;
+}
+.intro-section article:nth-child(2) {
+    flex:60%;
+    text-align: left;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.headshot1 {
+    height:100%;
+    width: 100%;
+}
+.intro-dot {
+    height: 25px;
+    width: 25px;
+    background-color: var(--standard-pink);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right:10px;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+4. SECTION 2: MIDDLE NAV 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.hr-dotted {
+    border-style: dotted;
+    border: 2px dashed var(--standard-white);
+    width: 90%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.middle-nav-section {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.middle-nav-section article {
+    flex: 20%;
+    text-align: center;
+    vertical-align: middle;
+}
+.middle-nav-section article a {
+    text-decoration: none;
+    color: var(--standard-white);
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+5. SECTION 3: ABOUT ME 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.headshot2 {
+    width: 250px;
+    height: 250px;
+}
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+6. SECTION 4: MY WORK 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+7. SECTION 5: FOOTER & CONTACT ME 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+8. RESPONSIVE MEDIA STYLES  
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* MOBILE -- SMALL */
+@media (max-width: 320px) {
+    /* GLOBAL SEMANTIC STYLES */
+    nav a {
+        display: none;
+        /* TODO: Add hamburger menu for mobile view */
+    }
+    /* SECTION 1: INTRO */
+    .intro-section {
+        flex-direction: column;
+    }
+    .intro-section article:first-child {
+        flex: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+    .intro-section article:nth-child(2) {
+        flex:100%;
+        text-align: left;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* SECTION 2: MIDDLE NAV */
+    .middle-nav-section {
+        flex-direction: column;
+    }
+    .middle-nav-section article {
+        flex: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+/* MOBILE -- MEDIUM */
+@media (max-width: 375px) {
+    /* GLOBAL SEMANTIC STYLES */
+    nav a {
+        display: none;
+        /* TODO: Add hamburger menu for mobile view */
+    }
+    /* SECTION 1: INTRO */
+    .intro-section {
+        flex-direction: column;
+    }
+    .intro-section article:first-child {
+        flex: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+    .intro-section article:nth-child(2) {
+        flex:100%;
+        text-align: left;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* SECTION 2: MIDDLE NAV */
+    .middle-nav-section {
+        flex-direction: column;
+    }
+    .middle-nav-section article {
+        flex: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+/* MOBILE -- LARGE */
+@media (max-width: 425px) {
+    /* GLOBAL SEMANTIC STYLES */
+    nav a {
+        display: none;
+        /* TODO: Add hamburger menu for mobile view */
+    }
+    /* SECTION 1: INTRO */
+    .intro-section {
+        flex-direction: column;
+    }
+    .intro-section article:first-child {
+        flex: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+    .intro-section article:nth-child(2) {
+        flex:100%;
+        text-align: left;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* SECTION 2: MIDDLE NAV */
+    .middle-nav-section {
+        flex-direction: column;
+    }
+    .middle-nav-section article {
+        flex: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+/* TABLET -- VERTICAL */
+@media (max-width: 768px) {
+    /* GLOBAL SEMANTIC STYLES */
+    nav a {
+        flex: 0 0 111px;
+        /* TODO: Add hamburger menu for mobile view */
+    }
+    /* SECTION 1: INTRO */
+    .intro-section {
+        flex-direction: column;
+    }
+    .intro-section article:first-child {
+        flex: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+    .intro-section article:nth-child(2) {
+        flex:100%;
+        text-align: left;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* GENERIC SMALL DEVICE */
+@media (max-width: 800px) {
+    .intro-section {
+        flex-direction: column;
+    }
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+PLACEHOLDER
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
