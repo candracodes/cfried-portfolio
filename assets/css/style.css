@@ -23,6 +23,9 @@ TABLE OF CONTENTS:
     --standard-light-gray: #e9ebf1;
     --standard-medium-gray: #5e6169;
   }
+html {
+    width: fit-content;
+}
 body {
     font-family: Arial;
     margin: 0;
@@ -37,9 +40,14 @@ h2 {
     font-size: xx-large;
     font-weight:lighter;
 }
+header {
+    position: fixed;
+    width: 100%;;
+}
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 2. HEADER & TOP NAV 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
 nav {
     background-color: var(--standard-white);
     color: var(--standard-navy);
@@ -80,6 +88,24 @@ nav a:hover {
 .logo a {
     color:#fff;
     text-decoration: none;
+}
+/* THIS IS A SCROLL TO TOP BUTTON AT THE BOTTOM RIGHT */
+.back-to-top {
+    width: 44px;
+    height: 46px;
+    color: var(--standard-white);
+    background-color: var(--standard-pink);
+    position: fixed;
+    right: 20px;
+    bottom:0;
+    text-align: center;
+    padding-top: 33px;
+    font-size: xx-large;
+    opacity: 0.75;
+}
+.back-to-top  a {
+    text-decoration: none;
+    color: var(--standard-white);
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -171,15 +197,85 @@ nav a:hover {
     font-weight: lighter;
 }
 
-
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 6. SECTION 4: MY WORK 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.section-my-work {
+    margin: 2vmin;
+}
+.section-my-work ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style:none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.section-my-work li {
+    /* height: 40vh; */
+    height: 300px;
+    flex-grow: 1;
+    margin: 2vmin;
+  }
+.section-my-work li:last-child {
+    /* flex-grow: 10; */
+    flex-grow: 50;
+}
+
+ .section-my-work img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    border-radius: 1vmin;
+}
+
+.thumbnail-caption {
+    background-color:rgba(0, 0, 0, 0.75);
+    color: #fff;
+    position: relative;
+    top: -74px;
+    margin-right: 38px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.thumbnail-caption a {
+    text-decoration: none;
+}
+.thumbnail-caption:hover {
+    background-color: var(--standard-navy);
+    transition:  background-color 0.5s;
+}
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 7. SECTION 5: FOOTER & CONTACT ME 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-
+.section-contact {
+    /* TODO: As the course continues, add font-awesome to use for icons and spruce up the footer */
+    background-color: var(--standard-light-gray);
+    text-align: center;
+}
+.section-contact article {
+    text-align: center;
+    color: var(--standard-navy);
+}
+.section-contact article ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    padding-bottom: 20px;;
+}
+.section-contact article li a {
+    text-decoration: none;
+    color: var(--standard-navy);
+}
+.section-contact article li a:hover {
+    color: var(--standard-pink);
+}
+.section-contact article h3 {
+    padding-top: 10px;
+}
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 8. RESPONSIVE MEDIA STYLES  
@@ -188,9 +284,17 @@ nav a:hover {
 /* MOBILE -- SMALL */
 @media (max-width: 320px) {
     /* GLOBAL SEMANTIC STYLES */
+    header {
+        position: relative;
+        width: 100%;
+    }
+    .hide-in-mobile {
+        display:none;
+    }
+    /* HEADER & TOP NAV  */
     nav a {
+        /* TODO: Add hamburger menu for mobile view once we cover javaascript */
         display: none;
-        /* TODO: Add hamburger menu for mobile view */
     }
     /* SECTION 1: INTRO */
     .intro-section {
@@ -236,14 +340,39 @@ nav a:hover {
         padding-top: 0;
         padding-left: 0;
     }
+    /* SECTION 4: MY WORK  */
+    .section-my-work {
+        margin:0;
+    }
+    .section-my-work ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .section-my-work li {
+        height: 40vh;
+        flex-grow: 1;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+    .section-my-work li:last-child {
+        flex-grow: 1;
+    }
 }
 
 /* MOBILE -- MEDIUM */
 @media (max-width: 375px) {
     /* GLOBAL SEMANTIC STYLES */
+    header {
+        position: relative;
+        width: 100%;
+    }
+    /* HEADER & TOP NAV  */
     nav a {
+        /* TODO: Add hamburger menu for mobile view once we cover javaascript */
         display: none;
-        /* TODO: Add hamburger menu for mobile view */
     }
     /* SECTION 1: INTRO */
     .intro-section {
@@ -289,14 +418,39 @@ nav a:hover {
         padding-top: 0;
         padding-left: 0;
     }
+    /* SECTION 4: MY WORK  */
+    .section-my-work {
+        margin:0;
+    }
+    .section-my-work ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .section-my-work li {
+        height: 40vh;
+        flex-grow: 1;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+    .section-my-work li:last-child {
+        flex-grow: 1;
+    }
 }
 
 /* MOBILE -- LARGE */
 @media (max-width: 425px) {
     /* GLOBAL SEMANTIC STYLES */
+    header {
+        position: relative;
+        width: 100%;
+    }
+    /* HEADER & TOP NAV  */
     nav a {
+        /* TODO: Add hamburger menu for mobile view once we cover javaascript */
         display: none;
-        /* TODO: Add hamburger menu for mobile view */
     }
     /* SECTION 1: INTRO */
     .intro-section {
@@ -342,14 +496,34 @@ nav a:hover {
         padding-top: 0;
         padding-left: 0;
     }
+    /* SECTION 4: MY WORK  */
+    .section-my-work {
+        margin:0;
+    }
+    .section-my-work ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .section-my-work li {
+        height: 40vh;
+        flex-grow: 1;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+    .section-my-work li:last-child {
+        flex-grow: 1;
+    }
 }
 
 /* TABLET -- VERTICAL */
 @media (max-width: 768px) {
-    /* GLOBAL SEMANTIC STYLES */
+    /* HEADER & TOP NAV  */
     nav a {
+        /* TODO: Add hamburger menu for mobile view once we cover javaascript */
         flex: 0 0 111px;
-        /* TODO: Add hamburger menu for mobile view */
     }
     /* SECTION 1: INTRO */
     .intro-section {
@@ -416,12 +590,6 @@ nav a:hover {
 }
 
 
-/* GENERIC SMALL DEVICE */
-@media (max-width: 800px) {
-    .intro-section {
-        flex-direction: column;
-    }
-}
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 PLACEHOLDER
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
