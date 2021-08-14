@@ -173,9 +173,31 @@ nav a:hover {
 }
 .section-about-me {
     background-color: var(--standard-light-gray);
-    color: var(--standard-navy);
-    padding:20px;
+    color: var(--standard-medium-gray);
+    padding: 20px;
+    height: 280px;
 }
+.section-about-me span {
+    color: var(--standard-navy);
+    font-size: large;
+    font-weight:bold;
+    padding-bottom:10px;
+}
+.section-about-me img {
+    /* TEST */
+    float: left;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 0;
+}
+.section-about-me p {
+    /* TEST */
+    float: right;
+    padding: 0;
+    width: 80%;
+    margin-top: 60px;
+}
+
 .section-about-me h3 {
     text-align: center;
     padding: 0;
@@ -218,7 +240,6 @@ nav a:hover {
     margin: 2vmin;
   }
 .section-my-work li:last-child {
-    /* flex-grow: 10; */
     flex-grow: 50;
 }
 
@@ -322,24 +343,26 @@ nav a:hover {
         padding: 20px;
     }
     /* SECTION 3: ABOUT ME */
-    .section-about-me h3 {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        padding-bottom: 10px;
+    .section-about-me {
+        height: fit-content;
     }
-    .span-about-me-left {
-        width: 100%;
-        margin-left: 0;
-        margin: 20px;
-    }
-    .span-about-me-right {
-        width: 100%;
+    .section-about-me img {
         float: none;
-        padding-right: 0;
-        padding-top: 0;
-        padding-left: 0;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 14px;
     }
+    .headshot2 {
+        width: 100%;
+        height: 100%;
+    }
+    .section-about-me p {
+        float: none;
+        padding: 0;
+        width: fit-content;
+        margin-top: 0;
+    }
+
     /* SECTION 4: MY WORK  */
     .section-my-work {
         margin:0;
@@ -400,23 +423,24 @@ nav a:hover {
         padding: 20px;
     }
     /* SECTION 3: ABOUT ME */
-    .section-about-me h3 {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        padding-bottom: 10px;
+    .section-about-me {
+        height: fit-content;
     }
-    .span-about-me-left {
-        width: 100%;
-        margin-left: 0;
-        margin: 40px;
-    }
-    .span-about-me-right {
-        width: 100%;
+    .section-about-me img {
         float: none;
-        padding-right: 0;
-        padding-top: 0;
-        padding-left: 0;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 14px;
+    }
+    .headshot2 {
+        width: 100%;
+        height: 100%;
+    }
+    .section-about-me p {
+        float: none;
+        padding: 0;
+        width: fit-content;
+        margin-top: 0;
     }
     /* SECTION 4: MY WORK  */
     .section-my-work {
@@ -478,23 +502,24 @@ nav a:hover {
         padding: 20px;
     }
     /* SECTION 3: ABOUT ME */
-    .section-about-me h3 {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        padding-bottom: 10px;
+    .section-about-me {
+        height: fit-content;
     }
-    .span-about-me-left {
-        width: 100%;
-        margin-left: 0;
-        margin: 65px;
-    }
-    .span-about-me-right {
-        width: 100%;
+    .section-about-me img {
         float: none;
-        padding-right: 0;
-        padding-top: 0;
-        padding-left: 0;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 14px;
+    }
+    .headshot2 {
+        width: 100%;
+        height: 100%;
+    }
+    .section-about-me p {
+        float: none;
+        padding: 0;
+        width: fit-content;
+        margin-top: 0;
     }
     /* SECTION 4: MY WORK  */
     .section-my-work {
@@ -542,54 +567,24 @@ nav a:hover {
         padding-right: 20px;
     }
     /* SECTION 3: ABOUT ME */
-    .section-about-me h3 {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        padding-bottom: 10px;
+    .section-about-me {
+        height: fit-content;
     }
-    .span-about-me-left {
-        width: 100%;
-        margin-left: 0;
-        margin: auto;
-        justify-content: center;
-        display: flex;
-    }
-    .span-about-me-right {
-        width: 100%;
+    .section-about-me img {
         float: none;
-        padding-right: 0;
-        padding-top: 20px;
-        padding-left: 0;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 14px;
+    }
+    .headshot2 {
+        width: 100%;
+        height: 100%;
+    }
+    .section-about-me p {
+        float: none;
+        padding: 0;
+        width: fit-content;
+        margin-top: 0;
     }
 }
 
-/* LAPTOP -- 1024PX */
-@media (max-width: 1024px) {
-    /* SECTION 3: ABOUT ME */
-    .section-about-me h3 {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        padding-bottom: 10px;
-    }
-    .span-about-me-left {
-        width: 100%;
-        margin-left: 0;
-        margin: auto;
-        justify-content: center;
-        display: flex;
-    }
-    .span-about-me-right {
-        width: 100%;
-        float: none;
-        padding-right: 0;
-        padding-top: 20px;
-        padding-left: 0;
-    }
-}
-
-
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-PLACEHOLDER
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */

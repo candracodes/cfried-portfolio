@@ -10,14 +10,10 @@ A new professional portfolio showcasing my design and development work.
 ## Foreword
 
 * This application aims to accomplish the following:
-    * Adhere to the [Guidelines](./assets/_guide/README.md) to ensure submission is in compliance with class standards
-    * List of other requirements...
+    * Adhere to the [Assignment Guidelines](./assets/_guide/README.md) to ensure submission is in compliance with acceptance criteria
+    * Begin construction of an initial online portfolio with advanced CSS (to be revisted later with working javascript events)
 
-## Design Notes
-
-* List design details here...
-
-## Development Notes | Tech Stack
+## Design & Development Notes
 
 * At the moment, this portfolio is composed of HTML & CSS only
 * In the future, I could see a use case for, at the very least, incorporating jQuery, FontAwesome, and React (as I learn it)
@@ -50,8 +46,17 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Mock-Up
 
-* [Click here to view the wireframe this portfolio's structure is based on.](https://4mxrwt.axshare.com/) 
+* [Click here to view the wireframe this portfolio's structure is loosely based on.](https://4mxrwt.axshare.com/) 
 
 * At a minimum, this portfolio should function this way:
 
 ![The following image shows the web application's expected appearance and functionality](./assets/_guide/Assets/02-advanced-css-homework-demo.gif)
+
+## Future Release Plans
+* Adding a "hamburger menu" for mobile views which, when clicked, will display nav options in an accordion style
+* Adding categories to "My Work" so users can filter the image view
+* Incorporating a javascript library for lightbox functionality, which will expand the images and display them in a carousel
+* Incporating FontAwesome library to use icons with ease
+* Optimizing images for faster site loading
+* Meta tags/descriptions for increased SEO visibility
+* Better visual representation of the footer section
