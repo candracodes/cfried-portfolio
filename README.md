@@ -48,6 +48,10 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 * [Click here to view the wireframe this portfolio's structure is loosely based on.](https://4mxrwt.axshare.com/) 
 
+* This project should resemble this screenshot:
+
+![Official Screenshot](./assets/_guide/Assets/official-mockup.png)
+
 * At a minimum, this portfolio should function this way:
 
 ![The following image shows the web application's expected appearance and functionality](./assets/_guide/Assets/02-advanced-css-homework-demo.gif)
