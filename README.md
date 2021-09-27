@@ -64,3 +64,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 * Optimizing images for faster site loading
 * Meta tags/descriptions for increased SEO visibility
 * Better visual representation of the footer section
+
+## Licensing
+The project is made possible with the following Licensing:
+- [MIT](license.txt)
