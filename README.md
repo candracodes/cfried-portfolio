@@ -1,4 +1,4 @@
-# CFried Portfolio
+# Candra Fried Portfolio — version 1
 A new professional portfolio showcasing my design and development work.
 
 ## Important URLs
@@ -68,3 +68,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ## Licensing
 The project is made possible with the following Licensing:
 - [MIT](license.txt)
+
+## Contact Developer
+For additional information, contact this application's developer: letschat@candracodes.com
